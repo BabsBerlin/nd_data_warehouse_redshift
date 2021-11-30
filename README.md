@@ -25,9 +25,9 @@ For the Sparkify database we have the 'songplays' table as the fact table and th
 - `create_table.py` accesses the sql queries to first drop any existing tables in the Sparkify db and then newly creates all tables 
 - `etl.py` populates first the staging tables and then the analytics tables
 - `sql_queries.py` contains all necessary SQL queries to create, populate, and drop the staging and analytics tables
-- `create_delete_cluster.ipynb` contains code to create a new IAM role and Redshift cluster
-- `check_database.ipynb` contains code to connect to the db and run SQL queries
 - `dwh.cfg` contains the parameters to connect to the AWS workspace. For security reasons this file does provide the structure, but no real values. 
+- `notebooks/create_delete_cluster.ipynb` contains code to create a new IAM role and Redshift cluster
+- `notebooks/check_database.ipynb` contains code to connect to the db and run SQL queries
 
 ### Project Steps and how to run the project
 
