@@ -29,7 +29,7 @@ For the Sparkify database we have the 'songplays' table as the fact table and th
 - `notebooks/create_delete_cluster.ipynb` contains code to create a new IAM role and Redshift cluster
 - `notebooks/check_database.ipynb` contains code to connect to the db and run SQL queries
 
-### Project Steps and how to run the project
+### Project Steps and how to run the project 
 
 1. To run the project you need to create a Redshift cluster first. To do this, you would have to fill out the necessary parameters in the `dwh.cfg` file and then run `create_delete_cluster.ipynb` steps 1 and 2. to create an IAM role and a new cluster. This code assumes that an IAM user with the necessary access rights is already in place in the AWS workspace.
 2. Now run `create_tables.py`to create the db and all necessary tables.
