@@ -25,8 +25,12 @@ For the Sparkify database we have the 'songplays' table as the fact table and th
 - `create_table.py` 
 - `etl.py`
 - `sql_queries.py`
-- `dwh.cfg`
+- `create_delete_cluster.ipynb` contains code to create a new IAM role and Redshift cluster
+- `check_database.ipynb` contains code to connect to the db and run SQL queries
+- `dwh.cfg` contains the parameters to connect to the AWS workspace. For security reasons this file does provide the structure, but no real values. 
 
 ### Project Steps
+
+
 
 ### How to run the project
