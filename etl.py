@@ -23,10 +23,11 @@ def main():
     config.read('dwh.cfg')
 
     print("\n*** CONNECTING TO DB ***")
-    conn = psycopg2.connect("host={} dbname={} user={} password={} port={}".format(*config['CLUSTER'].values()))
+    conn = psycopg2.connect("host={} dbname={} user={} password={} port={}"
+                            .format(*config['CLUSTER'].values()))
     cur = conn.cursor()
     print("*** CONNECTED TO DB ***")
-    
+
     print("\n*** LOADING STAGING TABLES ***")
     load_staging_tables(cur, conn)
     print("\n*** INSERTING INTO TABLES ***")
